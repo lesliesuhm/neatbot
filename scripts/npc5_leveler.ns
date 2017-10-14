@@ -1,0 +1,19 @@
+npc51 = ""
+npc52 = ""
+npc53 = ""
+npc54 = ""
+atkhero = ""
+
+//===DO-NOT-CHANGE-BELOW-THIS-LINE===//
+
+label expLoop
+execute "waithero {atkhero}"
+execute "attack {npc51} {atkhero} a:30k,w:300,s:100,p:200,sw:100"
+execute "waithero {atkhero} "
+execute "attack {npc52} {atkhero} a:30k,w:300,s:100,p:200,sw:100"
+execute "waithero {atkhero}"
+execute "attack {npc53} {atkhero} a:30k,w:300,s:100,p:200,sw:100"
+execute "waithero {atkhero}" 
+execute "attack {npc54} {atkhero} a:30k,w:300,s:100,p:200,sw:100"
+loop 999 expLoop
+end
