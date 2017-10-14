@@ -3,10 +3,12 @@ npc52 = ""
 npc53 = ""
 npc54 = ""
 atkhero = ""
+minArch = "" // Enter a whole number  ex. 20k or 20000, script will stop itself if archer go below this number //
 
 //===DO-NOT-CHANGE-BELOW-THIS-LINE===//
 
 label expLoop
+execute "if ( city.troop.archer < {minArch} ) end"
 execute "waithero {atkhero}"
 execute "attack {npc51} {atkhero} a:30k,w:300,s:100,p:200,sw:100"
 execute "waithero {atkhero} "
@@ -15,5 +17,5 @@ execute "waithero {atkhero}"
 execute "attack {npc53} {atkhero} a:30k,w:300,s:100,p:200,sw:100"
 execute "waithero {atkhero}" 
 execute "attack {npc54} {atkhero} a:30k,w:300,s:100,p:200,sw:100"
-loop 999 expLoop
+loop expLoop
 end
