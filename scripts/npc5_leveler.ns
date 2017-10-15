@@ -3,7 +3,7 @@ npc52 = ""
 npc53 = ""
 npc54 = ""
 atkhero = ""
-minArch = "" // Enter a whole number  ex. 20k or 20000, script will stop itself if archer go below this number //
+minArch = "" // Enter a whole number  ex. 50k or 50000, script will stop itself if archer go below this number //
 
 //===DO-NOT-CHANGE-BELOW-THIS-LINE===//
 
